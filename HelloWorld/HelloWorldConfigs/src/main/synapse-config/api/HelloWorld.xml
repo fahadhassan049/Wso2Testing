@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/HelloWorld" name="HelloWorld" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <property name="UNIQUEKEY" scope="default" type="STRING" value="fahad"/>
+            <redis.hGetAll configKey="RedisConnectionNew">
+                <redisKey>{$ctx:UNIQUEKEY}</redisKey>
+            </redis.hGetAll>
+            <property expression="json-eval($.text)" name="redisOutput" scope="default" type="STRING"/>
+            <log level="custom">
+                <property expression="$ctx:redisOutput" name="Redis Results"/>
+            </log>
+            <payloadFactory media-type="json">
+                <format>{"Hello":"WorldandHi"}</format>
+                <args/>
+            </payloadFactory>
+            <enrich>
+                <source clone="true" type="body"/>
+                <target property="payload" type="property"/>
+            </enrich>
+            <log category="DEBUG" level="custom">
+                <property expression="get-property('config')" name="URL"/>
+                <property expression="$ctx:payload" name="Payload"/>
+            </log>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

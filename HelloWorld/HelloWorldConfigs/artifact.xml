@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="HelloWorld" groupId="wso2.sampleHelloWorld.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/HelloWorld.xml</file>
+    </artifact>
+    <artifact name="HelloWorld_swagger" groupId="wso2.sampleHelloWorld.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HelloWorld_swagger.yaml</file>
+    </artifact>
+    <artifact name="HelloWorld_metadata" groupId="wso2.sampleHelloWorld.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/HelloWorld_metadata.yaml</file>
+    </artifact>
+    <artifact name="REDIS_CONNECTION_1" groupId="wso2.sampleHelloWorld.local-entry" version="1.0.0" type="synapse/local-entry" serverRole="EnterpriseServiceBus">
+        <file>\src\main\synapse-config\local-entries\REDIS_CONNECTION_1.xml</file>
+    </artifact>
+    <artifact name="redis-connector" groupId="wso2.sampleHelloWorld.lib" version="3.1.3" type="synapse/lib" serverRole="EnterpriseServiceBus">
+        <file>redis-connector-3.1.3.zip</file>
+    </artifact>
+    <artifact name="RedisConnectionNew" groupId="wso2.sampleHelloWorld.local-entry" version="1.0.0" type="synapse/local-entry" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/local-entries/RedisConnectionNew.xml</file>
+    </artifact>
+</artifacts>
