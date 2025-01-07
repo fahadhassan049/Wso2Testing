@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><artifacts>
-    <artifact name="redis-connector" groupId="wso2.sampleHelloWorld.lib" version="3.1.3" type="synapse/lib" serverRole="EnterpriseServiceBus">
-        <file>redis-connector-3.1.3.zip</file>
-    </artifact>
-</artifacts>
