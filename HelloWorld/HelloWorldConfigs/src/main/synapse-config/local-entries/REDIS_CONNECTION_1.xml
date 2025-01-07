@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localEntry key="REDIS_CONNECTION_1" xmlns="http://ws.apache.org/ns/synapse">
+    <redis.init>
+        <redisHost>10.50.13.47</redisHost>
+        <redisPort>6379</redisPort>
+        <redisPassword>Jazz#1234</redisPassword>
+        <maxWaitTime>100</maxWaitTime>
+        <evictionCheckInterval>100</evictionCheckInterval>
+        <connectionType>REDIS</connectionType>
+        <exhaustedAction>100</exhaustedAction>
+        <minEvictionTime>100</minEvictionTime>
+        <name>REDIS_CONNECTION_1</name>
+        <maxIdleConnections>100</maxIdleConnections>
+        <maxConnections>100</maxConnections>
+    </redis.init>
+</localEntry>
